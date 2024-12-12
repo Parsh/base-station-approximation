@@ -63,6 +63,13 @@ pub fn plot_smartphone_data(
                     filled: true,
                 }
             )))?;
+
+            // Add ci label
+            chart.draw_series(std::iter::once(Text::new(
+                format!("{}", ci),
+                (*x, *y),
+                ("sans-serif", 15).into_font().color(&WHITE),
+            )))?;
         }
     }
 
