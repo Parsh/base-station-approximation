@@ -35,7 +35,7 @@ pub fn plot_smartphone_data(
             ShapeStyle {
                 color: RGBColor(0, 0, 255).mix(0.2), // Transparent blue
                 stroke_width: 1,
-                filled: false,
+                filled: true,
             }
         )))?;
 
